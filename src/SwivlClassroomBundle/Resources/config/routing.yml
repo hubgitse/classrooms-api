@@ -1,0 +1,26 @@
+SwivlClassroomBundle_getAll:
+    path:     /
+    defaults: { _controller: "SwivlClassroomBundle:Classroom:getAll" }
+    methods:  [GET]
+
+SwivlClassroomBundle_getOne:
+    path:     /{id}
+    defaults: { _controller: "SwivlClassroomBundle:Classroom:getOne" }
+    methods:  [GET]
+    requirements:
+        id: '\d+'
+
+SwivlClassroomBundle_add:
+    path:     /
+    defaults: { _controller: "SwivlClassroomBundle:Classroom:add" }
+    methods:  [POST]
+
+SwivlClassroomBundle_update:
+    path:     /
+    defaults: { _controller: "SwivlClassroomBundle:Classroom:update" }
+    methods:  [PUT]
+
+SwivlClassroomBundle_delete:
+    path:     /
+    defaults: { _controller: "SwivlClassroomBundle:Classroom:delete" }
+    methods:  [DELETE]

@@ -1,0 +1,3 @@
+swivl_classroom:
+    resource: "@SwivlClassroomBundle/Resources/config/routing.yml"
+    prefix:   /
